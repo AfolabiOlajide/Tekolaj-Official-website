@@ -1,4 +1,8 @@
-// JavaScript General styles
+// ******************** JAVASCRIPT CODES *********************
+// *********** WRITTEN BY: AFOLABI OLAJIDE SAMUEL ************
+// ******************** DATE: APRIL 2020 *********************
+// *********************** DESCRIPTION ***********************
+// *ALL SCRIPT WRITTEN HERE ARE USED ON THE OFFICIAL WEB PAGE*
 
 
 // Drop down menue
@@ -10,6 +14,8 @@ function dropdown(){
         get.className = "nav-bar";
     }
 }
+
+// End of Drop Down Menue
 
 // image slider
 
@@ -34,10 +40,45 @@ function imageslide() {
 
 let time = setInterval(imageslide, 4000);
 
+// End of Image Slider
+
 // Night mode 
 
 function nightMode() {
+    changeMain();
+    changeImagesliderBorder();
+    changeBoxel();
+}
+
+// function to change the image slider's border
+
+function changeImagesliderBorder() {
+    let topSectionImage = document.getElementById("img-slider-box");
+
+    if(topSectionImage.className === "topsection-img"){
+        topSectionImage.className = "topsection-img-night";
+    }
+    else{
+        topSectionImage.className = "topsection-img";
+    }
+}
+
+// function to change the style of the main element
+
+function changeMain(){
     let bigBody = document.getElementById("wrapper");
+
+    if(bigBody.className === "big-wrapper") {
+        bigBody.className = "body";
+    }
+    else {
+        bigBody.className = "big-wrapper";
+    }
+}
+
+// function to change boxel style
+
+function changeBoxel() {
     let divBox = document.getElementById("boxel1");
     let divBox2 = document.getElementById("boxel2");
     let divBox3 = document.getElementById("boxel3");
@@ -48,14 +89,6 @@ function nightMode() {
     let divBox8 = document.getElementById("boxel8");
     let divBox9 = document.getElementById("boxel9");
     let divBox10 = document.getElementById("boxel10");
-    let topSectionImage = document.getElementById("topsectionimg");
-
-    if(bigBody.className === "bigwrapper") {
-        bigBody.className = "body";
-    }
-    else {
-        bigBody.className = "bigwrapper";
-    }
 
     if(divBox.className === "div-box" || divBox2.className === "div-box" ||
         divBox3.className === "div-box" || divBox4.className === "div-box" ||
@@ -86,11 +119,6 @@ function nightMode() {
         divBox9.className = "div-box ";
         divBox10.className = "div-box ";
     }
-
-    if(topSectionImage.className === "topsection-img"){
-        topSectionImage.className = "topsection-img-night";
-    }
-    else{
-        topSectionImage.className = "topsection-img";
-    }
 }
+
+// End of Night Mode

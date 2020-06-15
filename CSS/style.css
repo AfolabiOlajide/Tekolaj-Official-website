@@ -132,7 +132,7 @@ section.image-slider-section img#image-slider {
 }
 
 .topsection-img {
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5),
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5),
     0 0 5px 5px rgba(0, 0, 0, .5);
 }
 
@@ -242,7 +242,21 @@ div.row div.copy h3 {
         float: right;
     }
 
-    ul.nav-bar.responsive li#drop-down-icon#night-mode{
+    #night-mode {
+        display: block;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 50px;
+    }
+
+    ul.nav-bar.responsive li#night-mode {
+        position: absolute;
+        top: 0;
+        right: 50px;
+    }
+
+    ul.nav-bar.responsive li#drop-down-icon{
         position: absolute;
         top: 0;
         right: 0;
@@ -257,7 +271,7 @@ div.row div.copy h3 {
         float: none;
     }
 
-    ul.nav-bar.responsive li a :not(:nth-child(1)) {
+    ul.nav-bar.responsive li a {
         display: block;
         text-align: center;
     }
