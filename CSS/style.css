@@ -12,7 +12,7 @@ nav, section, footer {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: green;
+    color: #8A5634;
 }
 
 section {
@@ -66,7 +66,8 @@ ul.nav-bar {
     overflow: hidden;
     list-style-type: none;
     padding-left: 0;
-    background: rgba(0, 0, 0, .7);
+    /* background: rgba(0, 0, 0, .7); */
+    background: #0F2625;
     padding-left: 10px;
 }
 
@@ -86,8 +87,10 @@ ul.nav-bar li a {
 }
 
 ul.nav-bar li a:hover {
-    color: rgb(168, 163, 163);
-    background: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
+    /* background: rgb(54, 54, 54); */
+    background: #465F3F;
+    font-size: 1.2em;
 }
 
 ul.nav-bar li#drop-down-icon {
@@ -173,7 +176,8 @@ header h1 {
 button.explore-button {
     font-size: 20px;
     padding: 10px;
-    background: rgb(216, 212, 212);
+    /* background: rgb(216, 212, 212); */
+    background: #2BAA9C;
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 10px;
@@ -195,14 +199,15 @@ footer {
     width: 100%;
     display: block;
     border-top: 1px solid white;
-    background: rgb(0, 0, 0);
+    /* background: rgb(0, 0, 0); */
+    background: #0F2625;
     overflow: hidden;
     
 }
 
 
 footer div.col-foot h1 {
-    color: rgb(240, 214, 214);
+    color: rgb(214, 240, 233);
 }
 
 footer div.col-foot ul  {
@@ -216,7 +221,7 @@ footer div.col-foot li {
 
 footer div.col-foot li a {
     text-decoration: none;
-    color: rgb(240, 214, 214);
+    color: rgb(214, 240, 233);
 }
 
 .footy {
@@ -225,7 +230,7 @@ footer div.col-foot li a {
 
 div.row div.copy h3 {
     text-align: center;
-    color:rgb(240, 214, 214);
+    color:rgb(214, 240, 233);
 }
 
 

@@ -45,8 +45,8 @@ let time = setInterval(imageslide, 4000);
 // Night mode 
 
 function nightMode() {
-    changeMain();
     changeImagesliderBorder();
+    changeMain();
     changeBoxel();
 }
 
